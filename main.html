@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Main Heading -->
+    <header>
+        <h1 role="heading" aria-level="1">My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <img role="img" src="https://plus.unsplash.com/premium_photo-1690407617542-2f210cf20d7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="A profile picture " />
+        <p>Hi, I’m a web developer passionate about creating inclusive and accessible websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 role="heading" aria-level="2">My Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Portfolio Website</li>
+            <li role="listitem">Project 2: E-commerce Platform</li>
+            <li role="listitem">Project 3: Blogging Application</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2 role="heading" aria-level="2">Get in Touch</h2>
+        <p>Email: <a href="mailto:example@example.com">minal@gmail.com</a></p>
+    </footer>
 
 </body>
-
 </html>
+
